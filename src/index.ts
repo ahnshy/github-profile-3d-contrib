@@ -95,6 +95,10 @@ export const main = async (): Promise<void> => {
                 'profile-gitblock.svg',
                 create.createSvg(userInfo, template.GitBlockSettings, true)
             );
+            f.writeFile(
+                'profile-gitblockNight.svg',
+                create.createSvg(userInfo, template.GitBlockNightSettings, true)
+            );
         }
     } catch (error) {
         console.error(error);
